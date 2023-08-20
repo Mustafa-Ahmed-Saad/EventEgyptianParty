@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-dist/css/bootstrap.min.css"
+    />
+    <!-- myStyle -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- icons fontawsome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="home" class="h-100vh">
+      <div class="layout h-100vh">
+        <div
+          class="menuIcon text-white d-flex align-items-end position-absolute translate-middle-y top-50"
+        >
+          <i class="fa-solid fa-bars ms-2 fa-2x"></i>
+          <span class="ms-2 fs-3">open</span>
+        </div>
+        <div class="navigation text-white h-100vh bg-black position-fixed pt-4">
+          <div class="xicon d-flex justify-content-end">
+            <i class="fa-solid fa-xmark me-2 fa-2x hover-color-red"></i>
+          </div>
+          <ul class="list-unstyled mt-4">
+            <li class="p-3 hover-color-red" data-content="#home">Home</li>
+            <li class="p-3 hover-color-red" data-content="#sliderDown">
+              Duration
+            </li>
+            <li class="p-3 hover-color-red" data-content="#countDown">
+              Details
+            </li>
+            <li class="p-3 hover-color-red" data-content="#contactUs">
+              Contact
+            </li>
+          </ul>
+        </div>
+
+        <div class="container text-white">
+          <div
+            class="home-text d-flex align-items-center justify-content-center flex-column h-100vh"
+          >
+            <h1>ُEgyption Party</h1>
+            <p>Let's have Fun</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sliderDown" class="py-5 m-5">
+      <div class="container">
+        <div id="slider-container" class="text-center h-100vh w-75 mx-auto">
+          <div id="slider-1" class="slider-head bg-purple text-white p-3 fs-3">
+            ٍSinger one
+          </div>
+          <div
+            id="div-slider-1"
+            class="div-slider bg-secondary-subtle"
+            style="display: block"
+          >
+            <p class="p-3 m-0">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+          </div>
+
+          <div id="slider-2" class="slider-head bg-purple text-white p-3 fs-3">
+            Singer two
+          </div>
+          <div id="div-slider-2" class="div-slider bg-secondary-subtle">
+            <p class="p-3 m-0">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+          </div>
+
+          <div id="slider-3" class="slider-head bg-purple text-white p-3 fs-3">
+            Singer three
+          </div>
+          <div id="div-slider-3" class="div-slider bg-secondary-subtle">
+            <p class="p-3 m-0">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+          </div>
+
+          <div id="slider-4" class="slider-head bg-purple text-white p-3 fs-3">
+            Singer four
+          </div>
+          <div id="div-slider-4" class="div-slider bg-secondary-subtle">
+            <p class="p-3 m-0">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="countDown">
+      <div class="layout py-5">
+        <div class="container">
+          <div class="row g-4 text-white text-center fs-1">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div id="days" class="border border-1 border-white p-5">0 D</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div id="hours" class="border border-1 border-white p-5">0 h</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div id="minutes" class="border border-1 border-white p-5">
+                0 m
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div id="seconds" class="border border-1 border-white p-5">
+                0 s
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactUs" class="py-5">
+      <div class="container">
+        <div>
+          <h2>JOIN US</h2>
+          <p class="lead text-center">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          </p>
+
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div>
+                <h3>CONTACT INFO</h3>
+                <p>
+                  Why you should hire me writeup Lorem ipsum dolor sit amet,
+                  consectetuer adipiscing elit. Aenean commodo ligula eget
+                  dolor. Aenean massa. Cum sociis natoque nascetur ridiculus
+                  mus.
+                </p>
+                <div class="text-center text-secondary my-5">
+                  <div class="my-4">
+                    <i class="fa-solid fa-location-dot me-2"></i>
+                    New Street 22545, Nexa Road, New York City, USA
+                  </div>
+                  <div class="my-4">
+                    <i class="fa-solid fa-envelope me-2"></i>
+                    <span class="text-danger"> hello@uigrid.com</span>
+                  </div>
+                  <div class="my-4">
+                    <i class="fa-solid fa-phone me-2"></i> 001-000-000-000
+                  </div>
+                </div>
+
+                <div class="d-flex">
+                  <div
+                    class="hover-bg-color-red icon-dev border border-1 border-secondary d-flex align-items-center justify-content-center m-2 text-secondary"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div
+                    class="hover-bg-color-red icon-dev border border-1 border-secondary d-flex align-items-center justify-content-center m-2 text-secondary"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div
+                    class="hover-bg-color-red icon-dev border border-1 border-secondary d-flex align-items-center justify-content-center m-2 text-secondary"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div
+                    class="hover-bg-color-red icon-dev border border-1 border-secondary d-flex align-items-center justify-content-center m-2 text-secondary"
+                  >
+                    <i class="fa-solid fa-basketball"></i>
+                  </div>
+                  <div
+                    class="hover-bg-color-red icon-dev border border-1 border-secondary d-flex align-items-center justify-content-center m-2 text-secondary"
+                  >
+                    <i class="fa-brands fa-pinterest"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <input
+                class="form-control w-100 mb-3"
+                type="text"
+                placeholder="Enter Name"
+              />
+              <input
+                class="form-control w-100 mb-3"
+                type="email"
+                placeholder="Enter Email"
+              />
+              <textarea
+                class="form-control w-100 mb-3"
+                placeholder="Enter Message"
+              ></textarea>
+              <div class="mb-4">
+                <span id="Reamining" class="text-danger">100</span> Characyer
+                Reamining
+              </div>
+              <button class="btn btn-danger rounded-0">SEND MESSAGE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./jQuery.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

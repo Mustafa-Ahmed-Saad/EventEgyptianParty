@@ -1,0 +1,89 @@
+/* override on bootstrap */
+/* this to control time of scrolling using jQuery */
+:root {
+  scroll-behavior: unset;
+}
+
+/************************************************************************ utility */
+
+.h-100vh {
+  min-height: 100vh;
+}
+
+.bg-purple {
+  background-color: rgba(214, 46, 51, 0.6);
+}
+
+.hover-color-red {
+  transition: 0.3s;
+}
+.hover-color-red:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.hover-bg-color-red {
+  transition: 0.3s;
+}
+.hover-bg-color-red:hover {
+  background-color: red;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+/************************************************************************ home */
+#home {
+  background-image: url(./imgs/events-heavenly-header.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home .layout {
+  background-color: rgba(214, 46, 51, 0.6);
+}
+
+#home .navigation {
+  width: 250px;
+  left: 0;
+  transition: 1s;
+}
+
+#home .menuIcon {
+  left: 250px;
+  width: 110px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.home-text {
+  transition: 1s;
+}
+
+/************************************************************************ sliderDown */
+.div-slider {
+  display: none;
+}
+
+/************************************************************************ countDown */
+#countDown {
+  background-image: url(./imgs/invitation-2508607__340.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#countDown .layout {
+  background-color: rgba(214, 46, 52, 0.6);
+}
+
+/************************************************************************ contactUs */
+
+#contactUs textarea {
+  resize: vertical;
+  height: 200px;
+}
+#contactUs .icon-dev {
+  width: 40px;
+  height: 40px;
+}
